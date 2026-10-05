@@ -1,0 +1,662 @@
+
+> syntrix-app@0.1.0 dev
+> next dev
+
+▲ Next.js 16.3.5 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://10.119.165.79:3000
+✓ Ready in 2.0s
+⚠ Warning: Next.js ignored package-lock.json in C:\Users\FUJITSU because it would include your home directory (C:\Users\FUJITSU).
+ To use this directory, set `turbopack.root` in your Next.js config.
+
+✓ Running next.config.ts took 323ms
+
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET / 200 in 3.1s (next.js: 2.4s, application-code: 699ms)
+ GET / 200 in 162ms (next.js: 23ms, application-code: 140ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getDashboardData (src\app\app\dashboard\page.tsx:12:20)
+    at async DashboardPage (src\app\app\dashboard\page.tsx:130:16)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1761295504'
+}
+ GET /app/dashboard 200 in 2.1s (next.js: 1700ms, application-code: 388ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getProjectsData (src\app\app\projects\page.tsx:12:20)
+    at async ProjectsPage (src\app\app\projects\page.tsx:51:20)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '221909210'
+}
+ GET /app/projects 200 in 1117ms (next.js: 892ms, application-code: 225ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getConversations (src\app\app\ai-assistant\page.tsx:12:20)
+    at async AIAssistantPage (src\app\app\ai-assistant\page.tsx:51:25)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1690641341'
+}
+ GET /app/ai-assistant 200 in 1081ms (next.js: 792ms, application-code: 289ms)
+ GET /app/templates 200 in 1356ms (next.js: 806ms, application-code: 550ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getFilesData (src\app\app\files\page.tsx:12:20)
+    at async FilesPage (src\app\app\files\page.tsx:52:17)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1926902956'
+}
+ GET /app/files 200 in 916ms (next.js: 704ms, application-code: 213ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getTeamData (src\app\app\team\page.tsx:23:20)
+    at async TeamPage (src\app\app\team\page.tsx:91:16)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '2022953111'
+}
+ GET /app/team 200 in 987ms (next.js: 780ms, application-code: 207ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getSettingsData (src\app\app\settings\page.tsx:19:20)
+    at async SettingsPage (src\app\app\settings\page.tsx:42:16)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '3697256271'
+}
+ GET /app/settings 200 in 1006ms (next.js: 802ms, application-code: 203ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getActivityData (src\app\app\activity\page.tsx:12:20)
+    at async ActivityPage (src\app\app\activity\page.tsx:79:20)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '3053130360'
+}
+ GET /app/activity 200 in 952ms (next.js: 760ms, application-code: 192ms)
+ GET /app/projects/new 200 in 1251ms (next.js: 1016ms, application-code: 235ms)
+ GET /app/templates/1 200 in 2.8s (next.js: 2.4s, application-code: 352ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getProject (src\app\app\projects\[id]\page.tsx:27:20)
+    at async ProjectPage (src\app\app\projects\[id]\page.tsx:57:19)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '47475450'
+}
+ GET /app/projects/1 200 in 4.9s (next.js: 4.7s, application-code: 190ms)
+○ Compiling /app/projects/[id]/floorplan ...
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getProject (src\app\app\projects\[id]\floorplan\page.tsx:14:20)
+    at async FloorPlanPage (src\app\app\projects\[id]\floorplan\page.tsx:38:19)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '584548134'
+}
+ GET /app/projects/1/floorplan 200 in 4.9s (next.js: 4.8s, application-code: 169ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getProject (src\app\app\projects\[id]\3d\page.tsx:14:20)
+    at async Viewport3DPage (src\app\app\projects\[id]\3d\page.tsx:38:19)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1765331918'
+}
+ GET /app/projects/1/3d 200 in 2.2s (next.js: 1877ms, application-code: 299ms)
+ GET /api/health 503 in 1787ms (next.js: 1338ms, application-code: 449ms)
+✓ Finished filesystem cache database compaction in 18.7s
+ GET / 200 in 1349ms (next.js: 564ms, application-code: 785ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getDashboardData (src\app\app\dashboard\page.tsx:12:20)
+    at async DashboardPage (src\app\app\dashboard\page.tsx:130:16)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1180115422'
+}
+ GET /app/dashboard 200 in 244ms (next.js: 84ms, application-code: 160ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getConversations (src\app\app\ai-assistant\page.tsx:12:20)
+    at async AIAssistantPage (src\app\app\ai-assistant\page.tsx:51:25)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1681516240'
+}
+ GET /app/ai-assistant 200 in 139ms (next.js: 67ms, application-code: 72ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getProjectsData (src\app\app\projects\page.tsx:12:20)
+    at async ProjectsPage (src\app\app\projects\page.tsx:51:20)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1358644564'
+}
+ GET /app/projects 200 in 102ms (next.js: 49ms, application-code: 53ms)
+ GET /app/video 200 in 745ms (next.js: 651ms, application-code: 93ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+ GET /app/video 200 in 70ms (next.js: 15ms, application-code: 55ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getTeamData (src\app\app\team\page.tsx:23:20)
+    at async TeamPage (src\app\app\team\page.tsx:91:16)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '3510771578'
+}
+ GET /app/team 200 in 140ms (next.js: 68ms, application-code: 72ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getDashboardData (src\app\app\dashboard\page.tsx:12:20)
+    at async DashboardPage (src\app\app\dashboard\page.tsx:130:16)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '164103997'
+}
+ GET /app/dashboard 200 in 136ms (next.js: 17ms, application-code: 119ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getSettingsData (src\app\app\settings\page.tsx:19:20)
+    at async SettingsPage (src\app\app\settings\page.tsx:42:16)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '968127906'
+}
+ GET /app/settings 200 in 112ms (next.js: 48ms, application-code: 64ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getDashboardData (src\app\app\dashboard\page.tsx:12:20)
+    at async DashboardPage (src\app\app\dashboard\page.tsx:130:16)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1180115422'
+}
+ GET /app/dashboard 200 in 114ms (next.js: 16ms, application-code: 98ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getProjectsData (src\app\app\projects\page.tsx:12:20)
+    at async ProjectsPage (src\app\app\projects\page.tsx:51:20)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1358644564'
+}
+ GET /app/projects 200 in 108ms (next.js: 15ms, application-code: 93ms)
+ GET /app/templates 200 in 116ms (next.js: 56ms, application-code: 59ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getConversations (src\app\app\ai-assistant\page.tsx:12:20)
+    at async AIAssistantPage (src\app\app\ai-assistant\page.tsx:51:25)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1163575827'
+}
+ GET /app/ai-assistant 200 in 85ms (next.js: 12ms, application-code: 72ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getFilesData (src\app\app\files\page.tsx:12:20)
+    at async FilesPage (src\app\app\files\page.tsx:52:17)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '3880338689'
+}
+ GET /app/files 200 in 120ms (next.js: 45ms, application-code: 75ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getTeamData (src\app\app\team\page.tsx:23:20)
+    at async TeamPage (src\app\app\team\page.tsx:91:16)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1653179961'
+}
+ GET /app/team 200 in 91ms (next.js: 14ms, application-code: 78ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getDashboardData (src\app\app\dashboard\page.tsx:12:20)
+    at async DashboardPage (src\app\app\dashboard\page.tsx:130:16)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '164103997'
+}
+ GET /app/dashboard 200 in 125ms (next.js: 16ms, application-code: 109ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getDashboardData (src\app\app\dashboard\page.tsx:12:20)
+    at async DashboardPage (src\app\app\dashboard\page.tsx:130:16)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1180115422'
+}
+ GET /app/dashboard 200 in 72ms (next.js: 15ms, application-code: 57ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getDashboardData (src\app\app\dashboard\page.tsx:12:20)
+    at async DashboardPage (src\app\app\dashboard\page.tsx:130:16)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1180115422'
+}
+ GET /app/dashboard 200 in 87ms (next.js: 16ms, application-code: 71ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getProjectsData (src\app\app\projects\page.tsx:12:20)
+    at async ProjectsPage (src\app\app\projects\page.tsx:51:20)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1358644564'
+}
+ GET /app/projects 200 in 110ms (next.js: 15ms, application-code: 95ms)
+ GET /app/templates 200 in 94ms (next.js: 14ms, application-code: 80ms)
+ GET /app/templates/4 200 in 140ms (next.js: 66ms, application-code: 73ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getProjectsData (src\app\app\projects\page.tsx:12:20)
+    at async ProjectsPage (src\app\app\projects\page.tsx:51:20)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1358644564'
+}
+ GET /app/projects 200 in 113ms (next.js: 15ms, application-code: 98ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getDashboardData (src\app\app\dashboard\page.tsx:12:20)
+    at async DashboardPage (src\app\app\dashboard\page.tsx:130:16)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1180115422'
+}
+ GET /app/dashboard 200 in 101ms (next.js: 15ms, application-code: 86ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getProjectsData (src\app\app\projects\page.tsx:12:20)
+    at async ProjectsPage (src\app\app\projects\page.tsx:51:20)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1358644564'
+}
+ GET /app/projects 200 in 114ms (next.js: 16ms, application-code: 98ms)
+ GET /app/templates 200 in 88ms (next.js: 11ms, application-code: 76ms)
+ GET /app/video 200 in 88ms (next.js: 16ms, application-code: 72ms)
+ POST /api/video/export 200 in 4.9s (next.js: 89ms, application-code: 4.8s)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getFilesData (src\app\app\files\page.tsx:12:20)
+    at async FilesPage (src\app\app\files\page.tsx:52:17)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '3880338689'
+}
+ GET /app/files 200 in 255ms (next.js: 15ms, application-code: 240ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getDashboardData (src\app\app\dashboard\page.tsx:12:20)
+    at async DashboardPage (src\app\app\dashboard\page.tsx:130:16)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1180115422'
+}
+ GET /app/dashboard 200 in 106ms (next.js: 17ms, application-code: 89ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getProjectsData (src\app\app\projects\page.tsx:12:20)
+    at async ProjectsPage (src\app\app\projects\page.tsx:51:20)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1358644564'
+}
+ GET /app/projects 200 in 93ms (next.js: 15ms, application-code: 78ms)
+ GET /app/video 200 in 139ms (next.js: 16ms, application-code: 123ms)
+ GET /app/templates 200 in 89ms (next.js: 16ms, application-code: 73ms)
+ GET /app/templates 200 in 69ms (next.js: 17ms, application-code: 53ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getConversations (src\app\app\ai-assistant\page.tsx:12:20)
+    at async AIAssistantPage (src\app\app\ai-assistant\page.tsx:51:25)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '1163575827'
+}
+ GET /app/ai-assistant 200 in 109ms (next.js: 15ms, application-code: 94ms)
+⨯ Error: Your project's URL and Key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at createClient (src\lib\supabase\client.ts:7:28)
+    at async getFilesData (src\app\app\files\page.tsx:12:20)
+    at async FilesPage (src\app\app\files\page.tsx:52:17)
+   5 |   const cookieStore = await cookies();
+   6 |
+>  7 |   return createServerClient(
+     |                            ^
+   8 |     process.env.NEXT_PUBLIC_SUPABASE_URL!,
+   9 |     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  10 |     { {
+  digest: '925467490'
+}
+ GET /app/files 200 in 91ms (next.js: 14ms, application-code: 77ms)
